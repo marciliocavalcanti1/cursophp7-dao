@@ -22,9 +22,15 @@ require_once("config.php");
 //echo json_encode($search);
 
 //Carrega um usuário usando o login e a senha
-$usuario = new Usuario();
-$usuario->login("user","12345");
-echo $usuario;
+//$usuario = new Usuario();
+//$usuario->login("user","12345");
+//echo $usuario;
 
+# AULA S13A65: PDO - DAO - INSERT
+$aluno = new Usuario("aluno2", "@luno@");
+
+$aluno->insert();
+
+echo $aluno;
 
  ?>
