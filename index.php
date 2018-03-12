@@ -13,7 +13,7 @@ require_once("config.php");
 //echo $root;
 
 # AULA S13A64: PDO - DAO - LIST
-//Carregando uma lista de usuarios 
+//Carregando uma lista de usuarios
 //$lista = Usuario::getList();
 //echo json_encode($lista);
 
@@ -27,10 +27,17 @@ require_once("config.php");
 //echo $usuario;
 
 # AULA S13A65: PDO - DAO - INSERT
-$aluno = new Usuario("aluno2", "@luno@");
+//$aluno = new Usuario("aluno2", "@luno@");
+//$aluno->insert();
+//echo $aluno;
 
-$aluno->insert();
+# AULA S13A66: PDO - DAO - UPDATE
+$usuario = new Usuario();
 
-echo $aluno;
+$usuario->loadById(13);
+
+$usuario->update("professor", "!@#$%¨&*");
+
+echo $usuario;
 
  ?>
